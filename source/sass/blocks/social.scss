@@ -1,0 +1,38 @@
+.social__list {
+  @include clearlist;
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .social__fb svg {
+    width: 9px;
+    height: 16px;
+  }
+
+  .social__insta svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social__twit svg {
+    width: 16px;
+    height: 13px;
+  }
+
+  .social__item {
+    margin-right: 23px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
