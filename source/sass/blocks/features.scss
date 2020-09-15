@@ -1,0 +1,53 @@
+.features {
+  background-color: #e3ecf6;
+  background-image: url("../../img/bg-features-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.features__list {
+  @include clearlist;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  flex-basis: 33%;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .features__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .features__list {
+    flex-direction: column;
+  }
+
+  .features__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
