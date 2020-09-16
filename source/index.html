@@ -36,7 +36,7 @@
           </ul>
         </nav>
         <button class="header__button header__button--close header__button--nojs" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <p class="visually-hidden">Открыть меню</p>
         </button>
       </div>
       <div class="header__text container">
@@ -83,10 +83,110 @@
           </ul>
         </div>
       </section>
+      <section class="offers container">
+        <h2 class="offers__title title">Ближайшие круизы</h2>
+        <ul class="offers__list">
+          <li class="offers__item cruise">
+              <img src="img/cruise-1-desktop.png" class="cruise__photo" alt="Пейзаж Антарктики" class="cruise__photo" width="260" height="386">
+             
+            <div class="cruise__description">
+              <h3 class="cruise__title">Круиз "Астория"</h3>
+              <div class="cruise__text">
+                <h4>Маршрут</h4>
+                <p>Аргентина - Фолклендские острова - Антарктида</p>
+                <h4>Порт отправления</h4>
+                <p>Ушуайя</p>
+                <h4>Продолжительность</h4>
+                <p>11 дней</p>
+                <h4>Цена</h4>
+                <p>от 11500 $</p>
+              </div>
+              <a href="#" class="cruise__button">Забронировать</a>
+            </div>
+          </li>
+          <li class="offers__item cruise">
+              <img src="img/cruise-5-desktop.png" class="cruise__photo" alt="Пейзаж Антарктики" width="260" height="386">
+              
+            <div class="cruise__description">
+              <h3 class="cruise__title">Круиз "Элайн"</h3>
+              <div class="cruise__text">
+                <h4>Маршрут</h4>
+                <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                <h4>Порт отправления</h4>
+                <p>Буэнос-Айрес</p>
+                <h4>Продолжительность</h4>
+                <p>20 дней</p>
+                <h4>Цена</h4>
+                <p>от 14500 $</p>
+              </div>
+              <a href="#" class="cruise__button">Забронировать</a>
+            </div>
+          </li>
+          <li class="offers__item cruise">
+            <div class="cruise__photo">
+              <img src="img/cruise-3-desktop.png" alt="Пейзаж Антарктики" width="260" height="386">
+              <h3>Круиз "Атлантис"</h3>
+            </div>
+            <div class="cruise__description">
+              <h3 class="cruise__title">Круиз "Атлантис"</h3>
+              <div class="cruise__text">
+                <h4>Маршрут</h4>
+                <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
+                <h4>Порт отправления</h4>
+                <p>Ушуайя</p>
+                <h4>Продолжительность</h4>
+                <p>15 дней</p>
+                <h4>Цена</h4>
+                <p>от 14500 $</p>
+              </div>
+              <a href="#" class="cruise__button">Забронировать</a>
+            </div>
+          </li>
+          <li class="offers__item cruise">
+            <div class="cruise__photo">
+              <img src="img/cruise-4-desktop.png" alt="Пейзаж Антарктики" width="260" height="386">
+              <h3>Круиз "Одиссей"</h3>
+            </div>
+            <div class="cruise__description">
+              <h3 class="cruise__title">Круиз "Одиссей"</h3>
+              <div class="cruise__text">
+                <h4>Маршрут</h4>
+                <p>Чили - Антарктида</p>
+                <h4>Порт отправления</h4>
+                <p>Пунта-Аренас</p>
+                <h4>Продолжительность</h4>
+                <p>13 дней</p>
+                <h4>Цена</h4>
+                <p>от 9700 $</p>
+              </div>
+              <a href="#" class="cruise__button">Забронировать</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="booking">
+        <div class="booking__wrapper container">
+          <div class="booking__description">
+            <h2 class="booking__title">Раннее бронирование</h2>
+            <p class="booking__text">Забронируйте тур за 3-6 месяцев<br>до даты выезда и сэкономьте до 50%</p>
+          </div>
+          <form action="#" class="booking__form">
+            <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</h3>
+            <input type="text" name="name" id="name" placeholder="Валерия">
+            <input type="tel" name="phone" id="phone" placeholder="89236889975">
+            <input type="email" name="email" id="email" placeholder="grishaewa.lera@gmail.com">
+            <label for="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" class="visually-hidden">
+              <span>Я согласен на обработку моих&nbsp;персональных данных</span>
+            </label>
+            <button type="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__wrapper container">
+      <div class="footer__wrapper container container--footer">
         <a class="footer__logo logo">
           <svg width="70" height="38" viewBox="0 0 42 22" fill="#F9FBFD" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.54211 18.0197L8.80358 7.26166L11.0637 8.42713L16.4415 0L19.7928 3.8551L21.0399 2.86887L25.872 8.78584L29.3013 4.84111L38.8875 18.0197L29.652 6.81358L28.249 11.5202L29.535 15.2407L21.2736 4.25849L21.1842 8.00563L25.872 18.0197L17.1038 2.51017L19.6369 10.8926L16.0909 2.73432L14.1424 8.15829L14.5319 4.61695L9.66076 17.3922L10.2452 12.0132L8.21887 9.86169L0.54211 18.0197Z"/>

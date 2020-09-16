@@ -1,0 +1,62 @@
+.cruise {
+
+  outline: 3px solid tomato;
+
+  &:hover .cruise__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:hover .cruise__photo {
+    display: none;
+  }
+}
+
+.cruise__photo {
+}
+
+// .cruise__photo h3 {
+//   position: absolute;
+//   left: 30px;
+//   bottom: 3px;
+//   color: $light;
+//   font-size: 18px;
+//   font-weight: 500;
+//   line-height: 27px;
+// }
+
+.cruise__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.cruise__description {
+  padding-top: 35px;
+  padding-right: 25px;
+  padding-bottom: 35px;
+  padding-left: 25px;
+  display: none;
+  background-color: $dark;
+  color: $light;
+  text-align: left;
+  object-fit: cover;
+}
+
+.cruise__text h4 {
+ margin: 0;
+ margin-bottom: 10px;
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 20px;
+}
+
+.cruise__text p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
