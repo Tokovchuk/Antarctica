@@ -33,6 +33,10 @@
   color: $dark;
 }
 
+.contacts__description a {
+  @include hoveractive;
+}
+
 .contacts__text {
   margin-bottom: 45px;
   font-size: 18px;

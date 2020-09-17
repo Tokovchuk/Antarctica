@@ -5,6 +5,7 @@
 }
 
 .social__item {
+  @include hoveractive;
   margin-right: 33px;
 
   &:last-child {

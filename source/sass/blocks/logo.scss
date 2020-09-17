@@ -1,3 +1,7 @@
+.logo {
+  @include hoveractive;
+}
+
 @media (max-width: $tablet-max) {
   .logo svg {
     width: 38px;

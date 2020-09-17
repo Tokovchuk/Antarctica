@@ -1,10 +1,10 @@
 .cruise {
-
+  max-width: 260px;
+  max-height: 390px;
   outline: 3px solid tomato;
 
   &:hover .cruise__description {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 
   &:hover .cruise__photo {
@@ -13,6 +13,9 @@
 }
 
 .cruise__photo {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 // .cruise__photo h3 {
@@ -38,11 +41,11 @@
   padding-right: 25px;
   padding-bottom: 35px;
   padding-left: 25px;
-  display: none;
   background-color: $dark;
   color: $light;
   text-align: left;
-  object-fit: cover;
+  height: 100%;
+  display: none;
 }
 
 .cruise__text h4 {
@@ -51,6 +54,7 @@
  font-size: 14px;
  font-weight: 500;
  line-height: 20px;
+ flex-shrink: 1;
 }
 
 .cruise__text p {
@@ -59,4 +63,29 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  flex-shrink: 1;
+}
+
+.cruise__button {
+  padding-top: 7px;
+  padding-bottom: 15px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  background-color: $light;
+  color: $dark;
+  flex-shrink: 1
+}
+
+@media (max-width: $tablet-max) {}
+.cruise {
+  max-width: 309px;
+  max-height: 386px;
+}
+
+@media (max-width: $mobile-max) {}
+.cruise {
+  max-width: 270px;
 }
