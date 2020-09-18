@@ -6,11 +6,6 @@
   background-position: center center;
 }
 
-.booking .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .booking__wrapper {
   display: flex;
   justify-content: center;
@@ -24,7 +19,7 @@
 
 .booking__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
@@ -38,7 +33,10 @@
 }
 
 .booking__form {
-  padding: 50px;
+  padding-top: 44px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
   width: 403px;
   min-width: 403px;
   display: flex;
@@ -49,41 +47,22 @@
 
 .booking__form h3 {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
 }
 
 .booking__form input {
-  padding: 16px;
-  margin-bottom: 20px;
-}
-
-.booking__form span {
-  padding-left: 23px;
-  margin-bottom: 35px;
-  display: block;
-  position: relative;
-  font-size: 10px;
+  padding-top: 11px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  margin-bottom: 19px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 13px;
-  @include hoveractive;
+  line-height: 21px;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -3px;
-    width: 18px;
-    height: 18px;
-    background-color: $light;
-    cursor: pointer;
-  }
-}
-
-.booking__form input {
   &:checked + span {
     &::after {
       content: "";
@@ -99,10 +78,33 @@
   }
 }
 
+.booking__form span {
+  @include hoveractive;
+  padding-left: 23px;
+  margin-bottom: 35px;
+  display: block;
+  position: relative;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-color: $light;
+    cursor: pointer;
+  }
+}
+
 .booking__form button {
   @include hoveractive;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
@@ -114,8 +116,8 @@
 }
 
 @media (max-width: $tablet-max) {
-  .booking .container {
-    padding-top: 100px;
+  .booking {
+    padding-top: 88px;
     padding-bottom: 100px;
   }
 
@@ -125,43 +127,45 @@
 
   .booking__description {
     margin-right: 0;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
     color: $dark;
     text-align: center;
   }
-  
+
   .booking__title {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
   }
 }
 
 @media (max-width: $mobile-max) {
-  .booking .container {
-    padding-top: 65px;
+  .booking {
+    padding-top: 59px;
     padding-bottom: 65px;
   }
 
   .booking__description {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     color: $dark;
     text-align: center;
   }
-  
+
   .booking__title {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 31px;
   }
 
   .booking__text {
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 16px;
     line-height: 22px;
   }
 
   .booking__form {
-    padding-top: 40px;
+    padding-top: 33px;
     padding-bottom: 40px;
     padding-right: 30px;
     padding-left: 30px;
@@ -174,11 +178,14 @@
     text-align: center;
     padding-left: 8px;
     padding-right: 8px;
+    margin-bottom: 24px;
   }
 
   .booking__form span {
+    margin-bottom: 24px;
+
     &::before {
-      top: 2px;
+      top: 0;
     }
   }
 

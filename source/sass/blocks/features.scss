@@ -1,4 +1,6 @@
 .features {
+  padding-top: 110px;
+  padding-bottom: 120px;
   background-color: #e3ecf6;
   background-image: url("../../img/bg-features-desktop.png");
   background-repeat: no-repeat;
@@ -8,7 +10,7 @@
 
 .features__title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   text-align: center;
 }
 
@@ -28,6 +30,11 @@
 }
 
 @media (max-width: $tablet-max) {
+  .features {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
   .features__item {
     margin-right: 30px;
 
@@ -38,6 +45,16 @@
 }
 
 @media (max-width: $mobile-max) {
+  .features {
+    padding-top: 57px;
+    padding-bottom: 64px;
+  }
+
+
+  .features__title {
+    margin-bottom: 30px;
+  }
+
   .features__list {
     flex-direction: column;
   }

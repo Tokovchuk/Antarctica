@@ -1,6 +1,6 @@
 .footer {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
   background-color: $dark;
 }
 
@@ -14,13 +14,13 @@
 }
 
 .footer__logo {
-  margin-right: 40px;
+  margin-right: 25px;
 }
 
 @media (max-width: $mobile-max) {
   .footer {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 36px;
   }
 
   .footer__wrapper {
@@ -29,11 +29,11 @@
   }
 
   .footer__logo {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   .footer__nav {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .footer__social {

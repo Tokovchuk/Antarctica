@@ -1,8 +1,8 @@
 .card {
-  padding-top: 87px;
+  padding-top: 81px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   position: relative;
   color: $dark;
   background-color: #ffffff;
@@ -43,7 +43,7 @@
 
 .card__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -58,10 +58,10 @@
 
 @media (max-width: $tablet-max) {
   .card {
-    padding-top: 76px;
+    padding-top: 71px;
     padding-left: 20px;
     padding-right: 16px;
-    padding-bottom: 25px;
+    padding-bottom: 21px;
 
     &--ship::before {
       width: 21px;
@@ -87,5 +87,11 @@
 
   .card__title {
     line-height: 25px;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .card__title {
+    padding-right: 55px;
   }
 }

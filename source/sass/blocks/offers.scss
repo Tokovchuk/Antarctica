@@ -1,6 +1,13 @@
+.offers {
+  padding-top: 110px;
+  padding-bottom: 91px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .offers__title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   text-align: center;
 }
 
@@ -18,6 +25,11 @@
 }
 
 @media (max-width: $tablet-max) {
+  .offers {
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
   .offers__list {
     justify-content: space-around;
   }
@@ -33,6 +45,17 @@
 }
 
 @media (max-width: $mobile-max) {
+  .offers {
+    padding-top: 57px;
+    padding-bottom: 35px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .offers__title {
+    margin-bottom: 30px;
+  }
+
   .offers__list {
     flex-direction: column;
     align-items: center;
