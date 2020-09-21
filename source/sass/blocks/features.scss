@@ -6,9 +6,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../../img/bg-features-desktop@2x.png");
+  }
 }
 
-.features__title {
+.features h2 {
   margin: 0;
   margin-bottom: 49px;
   text-align: center;
@@ -51,7 +55,7 @@
   }
 
 
-  .features__title {
+  .features h2 {
     margin-bottom: 30px;
   }
 

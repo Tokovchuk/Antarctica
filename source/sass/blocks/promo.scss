@@ -10,12 +10,12 @@
   flex-basis: 50%;
 }
 
-.promo__title {
+.promo__description h2 {
   margin: 0;
   margin-bottom: 25px;
 }
 
-.promo__text {
+.promo__description p {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -53,13 +53,13 @@
     flex-basis: auto;
   }
 
-  .promo__title {
+  .promo__description h2 {
     margin-bottom: 12px;
     margin-top: -10px;
     padding-right: 130px;
   }
 
-  .promo__text {
+  .promo__description p {
     padding-right: 34px;
   }
 
@@ -101,11 +101,11 @@
     margin-bottom: 30px;
   }
 
-  .promo__title {
+  .promo__description h2 {
     padding-right: 85px;
   }
 
-  .promo__text {
+  .promo__description p {
     padding-right: 0;
   }
 }

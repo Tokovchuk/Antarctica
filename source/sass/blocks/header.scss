@@ -4,17 +4,16 @@
   width: 100%;
   background-color: #003067;
   background-image: url("../../img/bg-header-desktop.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-}
+  background-position: center center;
 
-.header .container {
-  padding-top: 0;
-  padding-bottom: 0;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../../img/bg-header-desktop@2x.png");
+  }
 }
 
 .header__menu {
-  margin-bottom: 194px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,11 +24,12 @@
 }
 
 .header__text {
+  padding-top: 194px;
   padding-left: 95px;
   color: $light;
 }
 
-.header__title {
+.header__text h1 {
   margin: 0;
   margin-bottom: 12px;
   font-size: 54px;
@@ -37,7 +37,7 @@
   line-height: 66px;
 }
 
-.header__description {
+.header__text p {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
@@ -50,20 +50,17 @@
     padding-bottom: 275px;
   }
 
-  .header__menu {
-    margin-bottom: 214px;
-  }
-
   .header__text {
+    padding-top: 214px;
     padding-left: 0;
   }
 
-  .header__title {
+  .header__text h1 {
     font-size: 50px;
     line-height: 61px;
   }
 
-  .header__description {
+  .header__text p {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -88,7 +85,6 @@
   .header__menu {
     flex-wrap: wrap;
     align-items: start;
-    margin-bottom: 131px;
 
     &--nojs {
       margin-top: -20px;
@@ -113,12 +109,12 @@
     }
   }
 
-  .header__title {
+  .header__text h1 {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .header__description {
+  .header__text p {
     font-size: 16px;
     padding-right: 50px;
   }
@@ -128,7 +124,7 @@
     width: 24px;
     height: 14px;
     background-color: transparent;
-    background-image: url("../../img/hamburger.svg");
+    background-image: url("../../img/icon-hamburger.svg");
     background-repeat: no-repeat;
     border: 0;
     cursor: pointer;
@@ -136,7 +132,7 @@
     &--close {
       width: 15px;
       height: 15px;
-      background-image: url("../../img/cross.svg");
+      background-image: url("../../img/icon-cross.svg");
     }
 
     &--nojs {
@@ -145,6 +141,7 @@
   }
 
   .header__text {
+    padding-top: 131px;
     max-width: 265px;
   }
 }

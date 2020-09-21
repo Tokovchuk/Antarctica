@@ -7,16 +7,17 @@
     display: block;
   }
 
-  &:hover .cruise__photo {
+  &:hover img {
     display: none;
   }
 
-  &:hover .cruise__title {
-    display: none;
+  &:hover h3 {
+    bottom: 314px;
+    left: 25px;
   }
 }
 
-.cruise__title {
+.cruise h3 {
   position: absolute;
   bottom: 5px;
   left: 29px;
@@ -26,30 +27,23 @@
   line-height: 27px;
 }
 
-.cruise__photo {
-  display: none;
-  height: 100%;
+.cruise img {
+  display: block;
+  height: 386px;
   width: 100%;
 }
 
-.cruise__subtitle {
-  margin: 0;
-  margin-bottom: 12px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-}
-
 .cruise__description {
-  padding-top: 29px;
+  padding-top: 70px;
   padding-right: 24px;
   padding-bottom: 35px;
   padding-left: 24px;
   background-color: $dark;
   color: $light;
   text-align: left;
-  height: 100%;
-  display: block;
+  height: 386px;
+  width: 100%;
+  display: none;
 }
 
 .cruise__text h4 {
@@ -95,7 +89,7 @@
     padding-right: 35px;
   }
 
-  .cruise__title {
+  .cruise h3 {
     bottom: 7px;
     left: 35px;
   }
@@ -107,7 +101,7 @@
     max-width: 270px;
   }
 
-  .cruise__photo {
+  .cruise img {
     min-width: 270px;
     height: 386px;
     min-height: 386px;
@@ -120,7 +114,7 @@
     min-height: 386px;
   }
 
-  .cruise__title {
+  .cruise h3 {
     bottom: 0;
     left: 25px;
   }

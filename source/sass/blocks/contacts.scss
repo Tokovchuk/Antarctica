@@ -5,11 +5,13 @@
   align-items: center;
 }
 
-.contacts__map {
+.contacts iframe {
   margin-right: 91px;
   position: relative;
+  overflow: hidden;
   min-width: 49%;
   height: 306px;
+  border: none;
   background-image: url("../../img/map-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,24 +24,15 @@
     left: 44%;
     width: 18px;
     height: 22px;
-    background-image: url("../../img/icon_pin.svg");
+    background-image: url("../../img/icon-pin.svg");
   }
-}
-
-.contacts__map iframe {
-  width: 100%;
-  border: none;
 }
 
 .contacts__description {
   color: $dark;
 }
 
-.contacts__description a {
-  @include hoveractive;
-}
-
-.contacts__text {
+.contacts__description p {
   margin: 0;
   margin-bottom: 30px;
   font-size: 18px;
@@ -47,9 +40,31 @@
   line-height: 27px;
 }
 
-.contacts__data {
+.contacts__description span {
   margin: 0;
   margin-bottom: 21px;
+  padding-left: 28px;
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 22px;
+    background-image: url("../../img/icon-pin.svg");
+  }
+}
+
+.contacts__description a {
+  @include hoveractive;
+  margin: 0;
   padding-left: 28px;
   position: relative;
   font-size: 16px;
@@ -57,28 +72,14 @@
   line-height: 24px;
   color: $dark;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &--address::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 22px;
-    background-image: url("../../img/icon_pin.svg");
-  }
-
-  &--tel::before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 18px;
     height: 18px;
-    background-image: url("../../img/icon_phone.svg");
+    background-image: url("../../img/icon-phone.svg");
   }
 }
 
@@ -93,7 +94,7 @@
     height: 335px;
   }
 
-  .contacts__text {
+  .contacts__description p {
     margin-bottom: 27px;
   }
 
@@ -111,7 +112,7 @@
     flex-direction: column-reverse;
   }
 
-  .contacts__text {
+  .contacts__description p {
     padding-right: 10px;
   }
 
