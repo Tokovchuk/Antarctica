@@ -6,39 +6,24 @@
   position: relative;
   color: $dark;
   background-color: #ffffff;
+}
 
-  &--ship::before {
-    content: "";
-    width: 27px;
-    height: 32px;
-    background-image: url("../../img/sprite.svg#icon-ship");
-    background-size: cover;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
+.card--ship svg {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
 
-  &--doubletick::before {
-    content: "";
-    width: 38px;
-    height: 21px;
-    background-image: url("../../img/icon-doubletick.svg");
-    background-size: cover;
-    position: absolute;
-    top: 35px;
-    left: 30px;
-  }
+.card--doubletick svg {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+}
 
-  &--boat::before {
-    content: "";
-    width: 42px;
-    height: 15px;
-    background-image: url("../../img/icon-boat.svg");
-    background-size: cover;
-    position: absolute;
-    top: 38px;
-    left: 30px;
-  }
+.card--boat svg {
+  position: absolute;
+  top: 38px;
+  left: 30px;
 }
 
 .card h3 {
@@ -62,27 +47,27 @@
     padding-left: 20px;
     padding-right: 16px;
     padding-bottom: 21px;
+  }
 
-    &--ship::before {
-      width: 21px;
-      height: 26px;
-      top: 25px;
-      left: 20px;
-    }
+  .card--ship svg {
+    width: 21px;
+    height: 26px;
+    top: 25px;
+    left: 20px;
+  }
 
-    &--doubletick::before {
-      width: 33px;
-      height: 19px;
-      top: 29px;
-      left: 20px;
-    }
+  .card--doubletick svg {
+    width: 33px;
+    height: 19px;
+    top: 29px;
+    left: 20px;
+  }
 
-    &--boat::before {
-      width: 38px;
-      height: 13px;
-      top: 32px;
-      left: 20px;
-    }
+  .card--boat svg {
+    width: 38px;
+    height: 13px;
+    top: 32px;
+    left: 20px;
   }
 
   .card h3 {

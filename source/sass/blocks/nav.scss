@@ -43,12 +43,18 @@
     display: none;
 
     &--open {
-      margin-bottom: 65px;
+      margin-bottom: 59px;
       display: block;
     }
 
     &--open .nav__item {
-      margin-bottom: 30px;
+      margin-bottom: 21px;
+      font-size: 18px;
+      line-height: 22px;
+
+      &:nth-child(2) {
+        order: -1;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -60,7 +66,7 @@
     }
 
     &--nojs {
-      margin-bottom: 65px;
+      margin-bottom: 59px;
       display: block;
     }
 

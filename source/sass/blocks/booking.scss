@@ -43,6 +43,7 @@
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
+  position: relative;
   width: 403px;
   min-width: 403px;
   display: flex;
@@ -59,6 +60,14 @@
   line-height: 27px;
 }
 
+.booking__form svg {
+  display: none;
+}
+
+.booking__form label {
+  position: relative;
+}
+
 .booking__form input {
   padding-top: 11px;
   padding-left: 14px;
@@ -69,18 +78,12 @@
   font-weight: 400;
   line-height: 21px;
 
-  &:checked + span {
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      top: 3px;
-      left: 3px;
-      background-image: url("../../img/icon-tick.svg");
-      background-repeat: no-repeat;
-    }
+  &:checked + svg {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    z-index: 2;
   }
 }
 
@@ -192,14 +195,6 @@
 
     &::before {
       top: 0;
-    }
-  }
-
-  .booking__form input {
-    &:checked + span {
-      &::after {
-        top: 8px;
-      }
     }
   }
 }

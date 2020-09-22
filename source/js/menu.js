@@ -18,14 +18,14 @@ button.classList.remove('header__button--close');
 button.addEventListener('click', function () {
   if (button.classList.contains('header__button--close')) {
     button.classList.remove('header__button--close');
-    button.classList.add('header__button--open');
+    button.classList.add('header__button--on');
     logo.classList.remove('logo--dark');
     nav.classList.remove('nav--open');
     menu.classList.remove('header__menu--open');
     header.classList.remove('header--open');
   } else {
     button.classList.add('header__button--close');
-    button.classList.remove('header__button--open');
+    button.classList.remove('header__button--on');
     logo.classList.add('logo--dark');
     nav.classList.add('nav--open');
     menu.classList.add('header__menu--open');
