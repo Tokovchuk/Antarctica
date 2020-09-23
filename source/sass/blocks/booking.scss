@@ -1,38 +1,40 @@
 .booking {
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 50px;
   background-color: #b6dafa;
-  background-image: url("../../img/bg-booking-desktop.png");
+  background-image: url("../img/bg-booking-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: url("../../img/bg-booking-desktop@2x.png");
+    background: url("../img/bg-booking-desktop@2x.png");
   }
 }
 
 .booking__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .booking__description {
-  margin-right: 144px;
+  padding-left: 59px;
   color: $dark;
 }
 
 .booking__description h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
+  display: inline-block;
   font-size: 40px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 44px;
 }
 
 .booking__description p {
   margin: 0;
+  padding-right: 255px;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -43,6 +45,7 @@
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
+  margin-right: 60px;
   position: relative;
   width: 403px;
   min-width: 403px;
@@ -77,6 +80,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  border-radius: 0;
 
   &:checked + svg {
     display: block;
@@ -96,6 +100,7 @@
   font-size: 10px;
   font-weight: 400;
   line-height: 13px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -146,6 +151,11 @@
     font-size: 34px;
     line-height: 51px;
   }
+
+  .booking__description p {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 @media (max-width: $mobile-max) {
@@ -192,6 +202,7 @@
 
   .booking__form span {
     margin-bottom: 24px;
+    padding-left: 28px;
 
     &::before {
       top: 0;

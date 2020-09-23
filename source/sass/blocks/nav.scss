@@ -1,6 +1,8 @@
 .nav__list {
   @include clearlist;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .nav__item {

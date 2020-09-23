@@ -82,6 +82,11 @@
   .cruise {
     max-width: 309px;
     max-height: 386px;
+
+    &:hover h3 {
+      bottom: 312px;
+      left: 34px;
+    }
   }
 
   .cruise__description {
@@ -99,6 +104,10 @@
 @media (max-width: $mobile-max) {
   .cruise {
     max-width: 270px;
+
+    &:hover h3 {
+      left: 25px;
+    }
   }
 
   .cruise img {
@@ -112,6 +121,10 @@
     padding-right: 26px;
     min-width: 270px;
     min-height: 386px;
+  }
+
+  .cruise__text h4 {
+    margin-bottom: 1px;
   }
 
   .cruise h3 {

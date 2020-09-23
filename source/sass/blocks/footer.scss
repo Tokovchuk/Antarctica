@@ -17,6 +17,12 @@
   margin-right: 40px;
 }
 
+@media (max-width: $tablet-max) {
+  .footer__logo {
+    margin-right: 25px;
+  }
+}
+
 @media (max-width: $mobile-max) {
   .footer {
     padding-top: 40px;

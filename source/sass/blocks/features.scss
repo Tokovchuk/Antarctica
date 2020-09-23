@@ -1,15 +1,15 @@
 .features {
   padding-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   background-color: #e3ecf6;
-  background-image: url("../../img/bg-features-desktop.png");
+  background-image: url("../img/bg-features-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   color: $dark;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../../img/bg-features-desktop@2x.png");
+    background-image: url("../img/bg-features-desktop@2x.png");
   }
 }
 
@@ -25,14 +25,16 @@
 .features__list {
   @include clearlist;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .features__item {
-  flex-basis: 33%;
-  margin-right: 40px;
+  margin-bottom: 40px;
+  flex-basis: 31%;
+  max-width: 360px;
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 }
@@ -40,7 +42,7 @@
 @media (max-width: $tablet-max) {
   .features {
     padding-top: 90px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
 
   .features h2 {
@@ -49,9 +51,10 @@
   }
 
   .features__item {
-    margin-right: 30px;
+    flex-basis: 30%;
+    min-width: 206px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
