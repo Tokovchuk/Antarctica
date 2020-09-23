@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  color: $dark;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../../img/bg-features-desktop@2x.png");
@@ -15,6 +16,9 @@
 .features h2 {
   margin: 0;
   margin-bottom: 49px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
   text-align: center;
 }
 
@@ -39,6 +43,11 @@
     padding-bottom: 100px;
   }
 
+  .features h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
   .features__item {
     margin-right: 30px;
 
@@ -57,6 +66,8 @@
 
   .features h2 {
     margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .features__list {
