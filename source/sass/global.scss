@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 3px solid orangered;
+  border-radius: 0;
+}
+
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   min-width: $mobile-min;

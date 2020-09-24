@@ -1,25 +1,29 @@
 .cruise {
   max-width: 260px;
-  max-height: 390px;
+  min-height: 386px;
   position: relative;
 
-  &:hover .cruise__description {
+  &:hover .cruise__description,
+  &:focus .cruise__description {
     display: block;
   }
 
-  &:hover img {
+  &:hover img,
+  &:focus img {
     display: none;
   }
 
-  &:hover h3 {
-    bottom: 314px;
+  &:hover h3,
+  &:focus h3 {
+    top: 10px;
     left: 25px;
   }
 }
 
 .cruise h3 {
+  padding-right: 24px;
   position: absolute;
-  bottom: 5px;
+  top: 82%;
   left: 29px;
   color: $light;
   font-size: 18px;
@@ -29,19 +33,20 @@
 
 .cruise img {
   display: block;
-  height: 386px;
+  min-height: 386px;
+  height: 100%;
   width: 100%;
 }
 
 .cruise__description {
   padding-top: 70px;
   padding-right: 24px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
   padding-left: 24px;
   background-color: $dark;
   color: $light;
   text-align: left;
-  height: 386px;
+  min-height: 386px;
   width: 100%;
   display: none;
 }
@@ -67,6 +72,7 @@
 }
 
 .cruise__button {
+  @include hoveractive;
   padding-top: 9px;
   padding-bottom: 9px;
   display: block;
@@ -84,7 +90,6 @@
     max-height: 386px;
 
     &:hover h3 {
-      bottom: 312px;
       left: 34px;
     }
   }
@@ -95,7 +100,6 @@
   }
 
   .cruise h3 {
-    bottom: 7px;
     left: 35px;
   }
 }
@@ -107,6 +111,10 @@
 
     &:hover h3 {
       left: 25px;
+    }
+
+    &:focus {
+      outline: 3px solid orange;
     }
   }
 
@@ -128,7 +136,7 @@
   }
 
   .cruise h3 {
-    bottom: 0;
+    top: 84%;
     left: 25px;
   }
 }

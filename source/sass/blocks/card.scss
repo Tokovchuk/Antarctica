@@ -20,10 +20,18 @@
   left: 30px;
 }
 
+.card--doubletick p {
+  padding-right: 20px;
+}
+
 .card--boat svg {
   position: absolute;
   top: 38px;
   left: 30px;
+}
+
+.card--boat p {
+  padding-right: 55px;
 }
 
 .card h3 {
@@ -36,7 +44,6 @@
 
 .card p {
   margin: 0;
-  padding-right: 1px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -57,11 +64,19 @@
     left: 20px;
   }
 
+  .card--ship p {
+    padding-right: 24px;
+  }
+
   .card--doubletick svg {
     width: 33px;
     height: 19px;
     top: 29px;
     left: 20px;
+  }
+
+  .card--doubletick p {
+    padding-right: 10px;
   }
 
   .card--boat svg {
@@ -71,17 +86,29 @@
     left: 20px;
   }
 
-  .card h3 {
-    line-height: 25px;
+  .card--boat p {
+    padding-right: 5px;
   }
 
-  .card p {
-    padding-right: 4px;
+  .card h3 {
+    line-height: 25px;
   }
 }
 
 @media (max-width: $mobile-max) {
   .card h3 {
     padding-right: 60px;
+  }
+
+  .card--ship p {
+    padding-right: 10px;
+  }
+
+  .card--doubletick p {
+    padding-right: 25px;
+  }
+
+  .card--boat p {
+    padding-right: 25px;
   }
 }

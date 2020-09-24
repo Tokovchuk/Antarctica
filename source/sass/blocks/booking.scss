@@ -142,6 +142,7 @@
   .booking__description {
     margin-right: 0;
     margin-bottom: 52px;
+    padding: 0;
     color: $dark;
     text-align: center;
   }
@@ -153,8 +154,12 @@
   }
 
   .booking__description p {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 145px;
+    padding-right: 145px;
+  }
+
+  .booking__form {
+    margin-right: 0;
   }
 }
 
