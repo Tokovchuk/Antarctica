@@ -2,13 +2,13 @@
   padding-top: 48px;
   padding-bottom: 50px;
   background-color: #b6dafa;
-  background-image: url("../img/bg-booking-desktop.png");
+  background-image: url("../img/bg-booking-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: url("../img/bg-booking-desktop@2x.png");
+    background: url("../img/bg-booking-desktop@2x.jpg");
   }
 }
 

@@ -2,14 +2,14 @@
   padding-top: 110px;
   padding-bottom: 80px;
   background-color: #e3ecf6;
-  background-image: url("../img/bg-features-desktop.png");
+  background-image: url("../img/bg-features-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   color: $dark;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-features-desktop@2x.png");
+    background-image: url("../img/bg-features-desktop@2x.jpg");
   }
 }
 

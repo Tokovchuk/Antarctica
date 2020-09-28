@@ -2,7 +2,9 @@
   @include clearlist;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
+  min-width: 120px;
 }
 
 .social__item {
