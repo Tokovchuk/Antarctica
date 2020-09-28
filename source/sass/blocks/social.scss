@@ -40,3 +40,9 @@
     }
   }
 }
+
+@media (max-width: $mobile-max) {
+  .social {
+    justify-content: flex-start;
+  }
+}
